@@ -1,6 +1,6 @@
 # ===============================
 # RETAIL SALES ANALYSIS PROJECT
-# FULL END-TO-END CODE
+# POWER BI READY FULL CODE
 # ===============================
 
 import pandas as pd
@@ -26,58 +26,66 @@ data = {
     "category": np.random.choice(["Electronics", "Accessories"], n),
     "quantity": np.random.randint(1, 5, n),
     "price": np.random.randint(100, 2000, n),
-    "discount": np.random.uniform(0, 0.3, n)
+    "discount": np.round(np.random.uniform(0, 0.3, n), 2)
 }
 
 df = pd.DataFrame(data)
 
-# Sales calculation
+# ===============================
+# 2. FEATURE ENGINEERING
+# ===============================
+
 df["sales"] = df["quantity"] * df["price"] * (1 - df["discount"])
 
-# Save dataset
-df.to_csv("sales_data.csv", index=False)
-
-print("\nDataset created successfully!\n")
-
-# ===============================
-# 2. LOAD DATA
-# ===============================
-
-df = pd.read_csv("sales_data.csv")
-
-print("\nFirst 5 rows:\n", df.head())
-print("\nInfo:\n")
-print(df.info())
-
-print("\nMissing values:\n", df.isnull().sum())
-
-# ===============================
-# 3. DATA CLEANING
-# ===============================
-
-df = df.drop_duplicates()
+df["profit"] = df["sales"] * 0.25  # assumed margin
 
 df["date"] = pd.to_datetime(df["date"])
 
 df["year"] = df["date"].dt.year
 df["month"] = df["date"].dt.month
+df["month_name"] = df["date"].dt.strftime("%B")
 df["day"] = df["date"].dt.day
+df["weekday"] = df["date"].dt.day_name()
 
-print("\nData cleaned successfully!\n")
+df["revenue_per_unit"] = df["price"] * (1 - df["discount"])
 
 # ===============================
-# 4. BASIC ANALYSIS
+# 3. SAVE DATASET (POWER BI INPUT)
 # ===============================
 
-print("\nSummary Statistics:\n")
-print(df.describe())
+df.to_csv("sales_data.csv", index=False)
+df.to_excel("sales_data.xlsx", index=False)
 
-# Total sales
+print("Dataset created and saved successfully (CSV + Excel)")
+
+# ===============================
+# 4. LOAD DATA (SIMULATE POWER BI INPUT CHECK)
+# ===============================
+
+df = pd.read_csv("sales_data.csv")
+df["date"] = pd.to_datetime(df["date"])
+
+print("\nDATA OVERVIEW")
+print(df.head())
+
+print("\nINFO")
+print(df.info())
+
+print("\nMISSING VALUES")
+print(df.isnull().sum())
+
+# ===============================
+# 5. BASIC ANALYSIS
+# ===============================
+
 total_sales = df["sales"].sum()
-print("\nTotal Sales:", total_sales)
+total_profit = df["profit"].sum()
+
+print("\nTOTAL SALES:", total_sales)
+print("TOTAL PROFIT:", total_profit)
 
 # ===============================
-# 5. MONTHLY SALES TREND
+# 6. MONTHLY SALES TREND
 # ===============================
 
 monthly_sales = df.groupby("month")["sales"].sum()
@@ -91,7 +99,7 @@ plt.grid()
 plt.show()
 
 # ===============================
-# 6. TOP PRODUCTS
+# 7. TOP PRODUCTS
 # ===============================
 
 top_products = df.groupby("product")["sales"].sum().sort_values(ascending=False)
@@ -99,14 +107,10 @@ top_products = df.groupby("product")["sales"].sum().sort_values(ascending=False)
 plt.figure(figsize=(8,5))
 sns.barplot(x=top_products.index, y=top_products.values)
 plt.title("Top Products by Sales")
-plt.xlabel("Product")
-plt.ylabel("Sales")
 plt.show()
 
-print("\nTop Products:\n", top_products)
-
 # ===============================
-# 7. REGION ANALYSIS
+# 8. REGION ANALYSIS
 # ===============================
 
 region_sales = df.groupby("region")["sales"].sum()
@@ -116,10 +120,8 @@ plt.pie(region_sales, labels=region_sales.index, autopct="%1.1f%%")
 plt.title("Sales by Region")
 plt.show()
 
-print("\nRegion Sales:\n", region_sales)
-
 # ===============================
-# 8. CATEGORY ANALYSIS
+# 9. CATEGORY ANALYSIS
 # ===============================
 
 category_sales = df.groupby("category")["sales"].sum()
@@ -130,45 +132,51 @@ plt.title("Category Sales")
 plt.show()
 
 # ===============================
-# 9. PROFIT ESTIMATION
-# ===============================
-
-df["profit"] = df["sales"] * 0.25  # assume 25% margin
-
-total_profit = df["profit"].sum()
-
-print("\nTotal Profit:", total_profit)
-
-# ===============================
 # 10. BEST DAYS
 # ===============================
 
 best_days = df.groupby("date")["sales"].sum().sort_values(ascending=False).head(10)
 
-print("\nTop 10 Sales Days:\n")
+print("\nTOP 10 SALES DAYS")
 print(best_days)
 
 # ===============================
-# 11. HIGH VALUE ORDERS
+# 11. TOP ORDERS
 # ===============================
 
 top_orders = df.groupby("order_id")["sales"].sum().sort_values(ascending=False).head(10)
 
-print("\nTop 10 Orders:\n")
+print("\nTOP 10 ORDERS")
 print(top_orders)
 
 # ===============================
-# 12. FINAL INSIGHTS
+# 12. FINAL BUSINESS INSIGHTS
 # ===============================
 
 print("\n====================")
 print("BUSINESS INSIGHTS")
 print("====================")
 
-print("1. Total Sales:", total_sales)
-print("2. Total Profit:", total_profit)
-print("3. Best Selling Product:", top_products.idxmax())
-print("4. Best Region:", region_sales.idxmax())
-print("5. Best Category:", category_sales.idxmax())
+print("Total Sales:", total_sales)
+print("Total Profit:", total_profit)
+print("Best Product:", top_products.idxmax())
+print("Best Region:", region_sales.idxmax())
+print("Best Category:", category_sales.idxmax())
 
 print("\nAnalysis Completed Successfully 🚀")
+
+# ===============================
+# 13. POWER BI READY EXPORT FILE
+# ===============================
+
+# Final clean dataset for Power BI
+powerbi_df = df[[
+    "order_id", "date", "year", "month", "month_name", "weekday",
+    "region", "product", "category",
+    "quantity", "price", "discount",
+    "sales", "profit"
+]]
+
+powerbi_df.to_csv("POWERBI_SALES_DATA.csv", index=False)
+
+print("\nPOWER BI FILE CREATED: POWERBI_SALES_DATA.csv")
