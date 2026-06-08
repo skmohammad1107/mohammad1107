@@ -1,15 +1,4 @@
-3d-data-analyst-portfolio/
-│── public/
-│    └── index.html
-│
-│── src/
-│    ├── App.js
-│    ├── index.js
-│    ├── Scene.js
-│    ├── components/
-│    │     ├── FloatingCard.js
-│    │     ├── SkillsSphere.js
-│    │     ├── DataCube.js
-│
-│── package.json
-│── README.md
+npx create-react-app 3d-data-analyst-portfolio
+cd 3d-data-analyst-portfolio
+
+npm install three @react-three/fiber @react-three/drei
