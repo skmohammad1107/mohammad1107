@@ -1,44 +1,43 @@
 # Hi there, I'm Shaik Chand Mohammad! 👋
-### 3D Animator & Data Analyst | Combining Logic with Creativity
+### Aspiring Data Analyst | E-commerce & Business Intelligence Enthusiast
 
-I am an aspiring 3D Animator and Data Analyst based in Visakhapatnam, India. With a background in Computer Applications (B.Com), I blend technical problem-solving with creative visual storytelling. I create 3D models, character animations, and motion designs.
-
----
-
-## 🎨 My Animation & Technical Toolbox
-
-*   **3D Modeling & Animation:** Blender, Autodesk Maya (Learning)
-*   **Texturing & Rendering:** Substance Painter, Cycles / Eevee
-*   **Video Editing & Composition:** Adobe Premiere Pro, After Effects
-*   **Technical Skills:** Python (for Blender scripting), SQL, Data Visualization
+I am a data analyst based in Visakhapatnam, India. I love turning messy data into clear business stories. I am currently studying B.Com in Computer Applications. I use data to help businesses make smart decisions.
 
 ---
 
-## 🎬 Featured Animation Showreel
+## 🛠️ My Data Analytics Toolbox
 
-[![Watch my 3D Animation Showreel](https://shields.io▶_Watch_My_Showreel-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com)
-*Click the badge above to watch my latest 3D character and environment animation showreel on YouTube!*
+*   **Languages:** Python (Pandas, NumPy), SQL (MySQL)
+*   **Data Visualization:** Power BI, Tableau, Matplotlib, Seaborn
+*   **Spreadsheets:** Advanced Microsoft Excel
+*   **Core Skills:** Business Statistics, KPI Monitoring, Trend Analysis
 
 ---
 
-## 📁 Featured 3D Projects
+## 📜 Certifications & Education
 
-### 🦖 1. [Project Title: Character Walk Cycle & Expressions](https://github.com)
-![Walk Cycle](https://giphy.com)
-*   **What it does:** Designed, rigged, and animated a full 3D bipedal character walk cycle.
-*   **Tools used:** Blender, Graph Editor, Rigging Tools.
-*   **Key Detail:** Focused on realistic weight distribution and fluid secondary motion.
+*   **Certification:** Analyzing and Visualizing Data with Microsoft Excel
+*   **Certification:** Analyzing and Visualizing Data with Microsoft Power BI
+*   **Education:** B.Com in Computer Application, Gayatri Vidya Parishad College (2024 - 2027)
 
-### 🏙️ 2. [Project Title: 3D Environment Design & Camera Fly-Through](https://github.com)
-![Environment Flythrough](https://giphy.com)
-*   **What it does:** Created a low-poly stylized sci-fi city environment with cinematic camera tracking.
-*   **Tools used:** Blender, Cycles Renderer, Adobe Premiere Pro.
-*   **Key Detail:** Optimized lighting and texturing to keep render times low while maintaining style.
+---
 
-### 🐍 3. [Project Title: Python Scripting for Blender Automation](https://github.com)
-*   **What it does:** Wrote custom Python scripts to auto-generate randomized 3D grid structures.
-*   **Tools used:** Python, Blender API (bpy).
-*   **Key Detail:** Speeds up the environment building process by automating repetitive modeling tasks.
+## 📁 Featured Data Projects
+
+### 📊 1. [Project Title: E-commerce Sales Performance Dashboard](https://github.com)
+*   **What it does:** Built an interactive Power BI dashboard tracking monthly revenue and profit trends.
+*   **Tools used:** Power BI, Advanced Excel, Power Query.
+*   **Key Insight:** Found a 15% dip in sales during Q3 due to shipping delays.
+
+### 🗄️ 2. [Project Title: SQL Customer Segmentation Analysis](https://github.com)
+*   **What it does:** Wrote complex MySQL queries to group customers by their spending habits.
+*   **Tools used:** MySQL, Database Management Systems (DBMS).
+*   **Key Insight:** Identified the top 5% of loyal customers who bring in 40% of total revenue.
+
+### 🐍 3. [Project Title: Python Exploratory Data Analysis (EDA)](https://github.com)
+*   **What it does:** Cleaned and analyzed a messy dataset to find regional sales trends.
+*   **Tools used:** Python, Pandas, NumPy, Seaborn.
+*   **Key Insight:** Discovered that weekend promotions increased store traffic by 25%.
 
 ---
 
@@ -46,4 +45,4 @@ I am an aspiring 3D Animator and Data Analyst based in Visakhapatnam, India. Wit
 
 *   **Email:** skmohammad1107@gmail.com
 *   **LinkedIn:** [shaik-chand-mohammad](https://linkedin.com)
-*   **ArtStation:** [://artstation.com](https://artstation.com)
+*   **Location:** Visakhapatnam, Andhra Pradesh, India
