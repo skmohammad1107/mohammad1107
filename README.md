@@ -1,46 +1,49 @@
-# Hi, I'm [Your Name]! 👋
-### Data Analyst | Insight Driven | Problem Solver
+# Hi there, I'm Shaik Chand Mohammad! 👋
+### 3D Animator & Data Analyst | Combining Logic with Creativity
 
-Welcome to my Data Analytics Portfolio! This repository showcases my technical skills, data philosophy, and projects spanning data extraction, cleaning, advanced analysis, and interactive visualization.
-
-🛠 **Technical Toolbelt:**
-- **Languages:** SQL (PostgreSQL, MySQL), Python (Pandas, NumPy, Seaborn, Matplotlib)
-- **Data Visualization:** Power BI, Tableau, Excel Dashboards
-- **Tools/Platforms:** Git, GitHub, Excel (VBA, Power Pivot)
+I am an aspiring 3D Animator and Data Analyst based in Visakhapatnam, India. With a background in Computer Applications (B.Com), I blend technical problem-solving with creative visual storytelling. I create 3D models, character animations, and motion designs.
 
 ---
 
-## 🚀 Featured Projects
+## 🎨 My Animation & Technical Toolbox
 
-### 1. End-to-End E-commerce Sales & Inventory Analysis
-* **Tools Used:** PostgreSQL, Python, Power BI
-* **The Problem:** A retail firm wanted to optimize inventory turnover and identify customer purchasing trends across demographics.
-* **What I Did:** 
-  - Extracted and structured 500k+ rows of transactional data using advanced SQL queries (Joins, CTEs, Window functions).
-  - Cleaned missing values and outliers with Python Pandas.
-  - Built an interactive Power BI dashboard tracking dynamic KPIs, profit margins, and seasonal sales trends.
-* **The Results:** Uncovered a 12% revenue leak in seasonal overstocking; suggested a realigned inventory model.
-* **🔗 [View GitHub Project Repository](LINK_TO_REPOS_1) | 📊 [View Live Dashboard](LINK_TO_DASHBOARD_1)**
-
-### 2. Tech Industry Salary Exploratory Data Analysis (EDA)
-* **Tools Used:** Python (Jupyter Notebook, Pandas, Matplotlib, Plotly)
-* **The Problem:** Understanding global tech compensation trends and identifying key factors influencing high-tier data roles.
-* **What I Did:** Scraped and analyzed unstructured industry survey data. Constructed comprehensive distribution models and regression insights to correlate experience level, location, and company size with salary.
-* **🔗 [View Jupyter Notebook](LINK_TO_REPOS_2)**
-
-### 3. Supply Chain Operations Metrics Dashboard
-* **Tools Used:** Advanced Microsoft Excel (Power Query, Pivot Tables, DAX formulas)
-* **The Problem:** Streamlining logistics tracking for regional delivery delays.
-* **What I Did:** Consolidated fragmented CSV files into a centralized Excel data model using Power Query. Designed an executive-ready dashboard showcasing order fulfillment rates and carrier performance.
-* **🔗 [View Excel Project](LINK_TO_REPOS_3)**
+*   **3D Modeling & Animation:** Blender, Autodesk Maya (Learning)
+*   **Texturing & Rendering:** Substance Painter, Cycles / Eevee
+*   **Video Editing & Composition:** Adobe Premiere Pro, After Effects
+*   **Technical Skills:** Python (for Blender scripting), SQL, Data Visualization
 
 ---
 
-## 📜 Certifications & Achievements
-* **Google Data Analytics Professional Certificate** (Coursera)
-* **SQL Advanced Certification** (HackerRank)
+## 🎬 Featured Animation Showreel
 
-## 📫 Let's Connect!
-* **LinkedIn:** [your-linkedin-profile](URL)
-* **Email:** your.email@example.com
-* **Personal Portfolio Website:** [yourname.github.io](URL)
+[![Watch my 3D Animation Showreel](https://shields.io▶_Watch_My_Showreel-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com)
+*Click the badge above to watch my latest 3D character and environment animation showreel on YouTube!*
+
+---
+
+## 📁 Featured 3D Projects
+
+### 🦖 1. [Project Title: Character Walk Cycle & Expressions](https://github.com)
+![Walk Cycle](https://giphy.com)
+*   **What it does:** Designed, rigged, and animated a full 3D bipedal character walk cycle.
+*   **Tools used:** Blender, Graph Editor, Rigging Tools.
+*   **Key Detail:** Focused on realistic weight distribution and fluid secondary motion.
+
+### 🏙️ 2. [Project Title: 3D Environment Design & Camera Fly-Through](https://github.com)
+![Environment Flythrough](https://giphy.com)
+*   **What it does:** Created a low-poly stylized sci-fi city environment with cinematic camera tracking.
+*   **Tools used:** Blender, Cycles Renderer, Adobe Premiere Pro.
+*   **Key Detail:** Optimized lighting and texturing to keep render times low while maintaining style.
+
+### 🐍 3. [Project Title: Python Scripting for Blender Automation](https://github.com)
+*   **What it does:** Wrote custom Python scripts to auto-generate randomized 3D grid structures.
+*   **Tools used:** Python, Blender API (bpy).
+*   **Key Detail:** Speeds up the environment building process by automating repetitive modeling tasks.
+
+---
+
+## 🤝 Let's Connect!
+
+*   **Email:** skmohammad1107@gmail.com
+*   **LinkedIn:** [shaik-chand-mohammad](https://linkedin.com)
+*   **ArtStation:** [://artstation.com](https://artstation.com)
