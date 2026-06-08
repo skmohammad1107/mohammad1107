@@ -103,4 +103,4 @@ SELECT Product_Name,
        SUM(Sales) AS Revenue
 FROM Sales
 GROUP BY Product_Name
-ORDER BY Revenue DESC;# mohammad1107
+ORDER BY Revenue DESC;
