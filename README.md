@@ -435,3 +435,24 @@ I am actively seeking opportunities in:
 I enjoy solving real-world business problems using data and continuously improving my analytical and technical skills.
 
 Thank you for visiting my portfolio repository.
+Data-Analytics-Portfolio/
+│
+├── README.md
+│
+├── E-Commerce-Sales-Analytics/
+│   ├── data/
+│   ├── notebooks/
+│   ├── dashboard/
+│   └── report/
+│
+├── Customer-Churn-Prediction/
+│
+├── Job-Market-Analytics/
+│
+├── Healthcare-Analytics/
+│
+├── SQL-Projects/
+│
+├── PowerBI-Dashboards/
+│
+└── Certifications/
